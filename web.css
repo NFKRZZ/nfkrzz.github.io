@@ -53,12 +53,13 @@ h1 {
     text-align:center;
   }
   .flex-child{
-    padding:10px;
+    padding: 0px;
     font-size:18px;
     font-family: 'OpenSans',sans-serif;
     font-weight:initial;
     text-align:center;
     margin: 0 auto;
+    transform: translateY(10px);
   }
   .fixed-image{
     position: fixed;
@@ -153,5 +154,19 @@ h1 {
   font-size: 50px;
   max-width: 1500px;
   transform: translateX(500px);
+}
 
+.project-header{
+position: relative;
+font-family: 'OpenSans',sans-serif;
+top:800px;
+transform: translateX(80px);
+}
+.project-text{
+  font-family: 'OpenSans',sans-serif;
+  color: #fff;
+  overflow: auto;
+  font-size: 50px;
+  max-width: 1500px;
+  transform: translateX(500px);
 }
