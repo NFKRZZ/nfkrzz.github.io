@@ -107,18 +107,18 @@
            <h3>Student Researcher, UCR</h3>
            <p>From Summer 2022 to Winter 2023, I was involved in a research lab under Professor Venkatadriagaram focused on creating a low energy water filtration device. Specifically I worked on creating a venturi tube capable of producing a pressure drop of 30,000 pascals, enough to vaporize water. </p>
          </div>
-         <img src="images/venturi2.png" alt="Venturi Tube">
+         <img src="images/Venturi.png" alt="Venturi Tube">
        </div>
       <!-- Add more flex items as needed -->
     </div>
     
     
-    <div class = "experience-title">Projects</div>
+    <div class = "experience-title">Engineering Projects</div>
     <div class = "flex-container2">
       <div class = "flex-item2">
          <div class = "text-container">
             <h3>Rear Wing Design </h3>
-            <p>I designed a rear wing using the NACA 4418 aerofoil design. The wing features two splitter at different angles of attack. I then simulated the downforce produced by the wing at various speeds using STAR CCM+. </p>
+            <p>I designed a rear wing using the NACA 4418 aerofoil design. The wing features two splitters at different angles of attack. I then simulated the downforce produced by the wing at various speeds using STAR CCM+. </p>
          </div>
          <img src = "images/airfoil.png" alt = "Rear Wing">
       </div>
@@ -128,6 +128,31 @@
             <p>I designed and fabricated a 3 foot long rocket using 3d printed plastic, fiberglass, and cardboard. With a custom avionics system that logged down position, acceleration, and orientation data, it reached an apogee of 1000m using a J425 rocket motor.</p>
          </div>
          <img src = "images/20240229_113139.jpg" alt = "Rocket">
+      </div>
+    </div>
+
+    <div class ="experience-title">Coding Projects</div>
+    <div class ="flex-container2">
+      <div class = "flex-item2">
+         <div class = "text-container">
+            <h3>Song Detection C++</h3>
+            <p>Using FFTW, I created a song detection program that is similar to Shazam. It generates a hash table of the most intense frequencies throughout a given song and compares that to input data to determine what song it most likely matches.</p>
+         </div>
+         <img src = "images/SongDetection.png" alt = "Song Detection"> 
+      </div>
+      <div class = "flex-item2">
+         <div class = "text-container">
+            <h3>Audio to MIDI C++</h3>
+            <p>This project was focused on transcibing audio files to MIDI files that could be used in a DAW like FL Studio. To do this I utilized FFTW to construct a spectrogram of the song, logging the most intense frequencies throughout discrete chunks of the song. I then clamped these frequencies to the nearest neighbor frequency according to what key the song was in. Finally I am working on creating a machine learning algorithm that will accuratley detect whether a note is being pressed or unpressed based off of the songs intensity data</p>
+         </div>
+         <img src ="images/AudioToWAV.png" alt = "Audio to MIDI">
+      </div>
+      <div class = "flex-item2">
+         <div class = "text-container">
+            <h3>r/place Bot C#</h3>
+            <p>For r/Place 2023 I created a software that used hundreds of bot accounts to participate in the event as if they were actual users. To interact with the website I used the standard HTTP library included in .NET and I employed proxies to avoid IP bans. The bot software was multithreaded to ensure each worker could function in parrallel to each other.</p>
+         </div>
+         <img src = "images/placeBotPic.png" alt = "Reddit Place Bot Code">
       </div>
     </div>
 </body>
