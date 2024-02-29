@@ -1,85 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <meta charset ="utf-8">
+   <meta charset="utf-8">
    <title>Portfolio</title>
-   <link rel = "stylesheet" href="web.css">
+   <link rel="stylesheet" href="web.css">
    <script>
-      // JavaScript to add/remove the "disappear" class based on scroll position
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    var scrollPosition = window.scrollY;
+      window.addEventListener('scroll', function() {
+         var navbar = document.querySelector('.navbar');
+         var scrollPosition = window.scrollY;
 
-    if (scrollPosition > 500) {
-        setTimeout(function() {
-            navbar.classList.add('disappear');
-        }, 300); // Delay for 300 milliseconds (0.3 seconds)
-    } else {
-        navbar.classList.remove('disappear');
-    }
-});
+         if (scrollPosition > 500) {
+            setTimeout(function() {
+               navbar.classList.add('disappear');
+            }, 300);
+         } else {
+            navbar.classList.remove('disappear');
+         }
+      });
    </script>
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+         font-family: Arial, sans-serif;
+      }
+
+      meta {
+         name: viewport;
+         content: width=device-width, initial-scale=1;
+      }
+
+      .about-text, .education-text {
+         font-size: 2em;
+      }
+
+      @media only screen and (max-width: 600px) {
+         .about-text, .education-text {
+            font-size: 1.5em;
+         }
+      }
+   </style>
 </head>
 <body>
    <h1>Ravi Dhaliwal</h1>
-   <p class="small-text"></p>
-   <p class="body-text"></p>
+   <div class="flex-container">
+      <div class="flex-item">
+         <li>Programming Languages</li>
+         <div class="flex-child">MATLAB, C++, C, C#, Java, & Python</div>
+      </div>
+      <div class="flex-item">
+         <li>Projects</li>
+         <div class="flex-child">Audio to MIDI (C++)</div>
+         <div class="flex-child">Client/Server Bot Net (C#)</div>
+      </div>
+      <div class="flex-item">
+         <li>Experience</li>
+         <div class="flex-child">Student Researcher @ UC Riverside Bourns School of Engineering</div>
+         <div class="flex-child">Principal Investigator @ NASA LSPACE Academy</div>
+      </div>
+   </div>
+   <div class="fixed-image" id="first-image">
+      <a href="https://github.com/NFKRZZ">
+         <img src="images/github.png" alt="First Image">
+      </a>
+   </div>
+   <div class="fixed-image" id="second-image">
+      <a href="https://www.linkedin.com/in/ravi-dhaliwal-247474226/">
+         <img src="images/linkedin.png" alt="Second Image">
+      </a>
+   </div>
+   <div class="navbar">
+      <ul>
+         <li><a href="#about">About Me</a></li>
+         <li><a href="#education">Education</a></li>
+         <li><a href="#projects">Projects</a></li>
+         <li><a href="PDFs/ResumeRD.pdf" download="Ravi_Dhaliwal_Resume.pdf">Resume</a></li>
+      </ul>
+   </div>
+   <div class = "about-section">
+      <div class = "about-text">About Me</div>
+      <div class = "about-text-info">
+         My name is Ravi Dhaliwal and I am a physics student at
+            the University of California, Los Angeles. I spend a lot
+            of my time focused on engineering oriented projects ranging
+            from software projects to launching model rockets.
+
+            I aim to enter an industry where I can fully utilize my skillset when I graduate.
+      </div>
+   </div>
+
+   <div class = "about-section">
+      <div class = "about-text">Education</div>
+      <div class = "about-text-info">Physics B.S. & CS Minor at UCLA</div>
+      <div class = "about-text-info">Expected Graduation Date: June 2025</div>
+   </div>
+
+   <div class="flex-container2">
+      <div class="flex-item2">
+         <div class="text-container">
+           <h3>NASA L'SPACE NPWEE ACADEMY</h3>
+           <p>For the fall of 2023, I was the principal investigator for my teams proposal of implementing super capacitors into satellite propulsions systems to better collision avoidance </p>
+         </div>
+         <img src="images/nasa.jpg" alt="Image 1">
+       </div>
+    
+       <div class="flex-item2">
+         <div class="text-container">
+           <h3>Student Researcher, UCR</h3>
+           <p>From Summer 2022 to Winter 2023, I was involved in a research lab under Professor Venkatadriagaram focused on creating a low energy water filtration device. Specifically I worked on creating a venturi tube capable of producing a pressure drop of 30,000 pascals, enough to vaporize water. </p>
+         </div>
+         <img src="images/Venturi.png" alt="Image 1">
+       </div>
+      <!-- Add more flex items as needed -->
+    </div>    
 </body>
-<div class="flex-container">
-   <div class="flex-item">
-       <li>Programming Lanugages</li>
-       <div class="flex-child">MATLAB, C++, C, C#, Java, & Python</div>
-   </div>
-   <div class="flex-item">
-      <li>Projects</li>
-      <div class="flex-child">Audio to MIDI (C++)</div>
-      <div class ="flex-child">Client/Server Bot Net (C#)</div>
-  </div>
-  <div class="flex-item">
-   <li>Experience</li>
-   <div class="flex-child">Student Researcher @ UC Riverside Bourns School of Engineering</div>
-</div>
-</div>
-<div class = "fixed-image" id="first-image">
-   <a href = "https://github.com/NFKRZZ">
-   <img src="images/github.png" alt="First Image">
-   </a>
-</div>
-<div class="fixed-image" id = "second-image">
-   <a  href="https://www.linkedin.com/in/ravi-dhaliwal-247474226/">
-   <img src="images/linkedin.png" alt ="Second Image">
-   </a> 
-</div>
-<div class="navbar">
-   <ul>
-     <li><a href="#about">About Me</a></li>
-     <li><a href="#education">Education</a></li>
-     <li><a href="#projects">Projects</a></li>
-     <li><a href="PDFs/ResumeRD.pdf" download="Ravi_Dhaliwal_Resume.pdf">Resume</a></li>
-   </ul>
- </div>
-<div id = "about-section">
-   <div class = "about-text">About Me</div>
-   <div class = "about-text-info">My name is Ravi Dhaliwal and I am a physics student at
-   the University of California, Los Angeles. I spend a lot
-   of my time focused on engineering oriented projects ranging
-   from software projects to launching model rockets.
-   
-   I aim to enter an industry where I can fully utilize my skillset when I graduate.</div>
-   </div>
-<div class = "education-header">
-   <div class = "about-text">Education</div>
-   <div class = "education-text">
-      Physics B.S. at UCLA
-   </div>
-   <div class = "education-text">Expected Graduation Date: June 2025</div>
-</div>
-
-<div class = "project-header">
-   <div class = "about-text"></div>
-   <div class = "project-text"></div>
-</div>
-
 
 
 
