@@ -120,12 +120,10 @@ h2
 }
 
 .about-section {
-  position:relative;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 75px;
+  position: relative;
   top: 500px;
-  padding-bottom: 2em;
+
+
 }
 
 .about-text {
@@ -133,23 +131,21 @@ h2
   font-weight: bold;
   font-size: 50px;
   color: #fff;
-  padding-left: 2em;
   text-align: left;
+  padding-left: 2em;
 }
 
 .about-text-info {
-  padding: 2em 2em;
-  width:40em; 
+  text-align: center;
   overflow-wrap: break-word; 
   word-wrap: break-word; 
   word-break: break-word; 
 
-  position: relative;
+  padding-left: 2em;
   font-family: 'OpenSans',sans-serif;
   color: #fff;
   font-size: 30px;
-  transform: translateX(5vb);
-  text-align: center;
+  
 
 }
 
@@ -193,11 +189,13 @@ h2
 
 .text-container h3
 {
+  position: inherit;
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
   text-align:center;
   margin-top:0;
+  padding-left: 3em;
 }
 
 
@@ -205,6 +203,16 @@ h2
 .flex-item2 img {
   max-width: 45%; /* Adjust the width of the image */
   margin-right: 10%; /* Add spacing between image and text */
+}
+
+.experience-title
+{
+  position: relative;
+  top: 18em;
+  text-align: center;
+  font-size: 50px;
+  color:#fff;
+  
 }
 
 
